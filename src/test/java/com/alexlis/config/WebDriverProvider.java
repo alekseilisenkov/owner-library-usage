@@ -8,9 +8,9 @@ import java.util.function.Supplier;
 
 public class WebDriverProvider implements Supplier<WebDriver> {
 
-    private WebDriverConfig config;
+    private HugeWebDriverConfig config;
 
-    public WebDriverProvider(final WebDriverConfig config) {
+    public WebDriverProvider(final HugeWebDriverConfig config) {
         this.config = config;
     }
 
