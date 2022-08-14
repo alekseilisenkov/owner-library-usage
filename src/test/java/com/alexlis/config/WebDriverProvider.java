@@ -8,9 +8,23 @@ import java.util.function.Supplier;
 
 public class WebDriverProvider implements Supplier<WebDriver> {
 
-    private HugeWebDriverConfig config;
+//    private HugeWebDriverConfig config;
+//
+//    public WebDriverProvider(final HugeWebDriverConfig config) {
+//        this.config = config;
+//    }
+//
+//    @Override
+//    public WebDriver get() {
+//        if (config.getBrowser().equals(Browser.FIREFOX)) {
+//            return new FirefoxDriver();
+//        }
+//        return new ChromeDriver();
+//    }
 
-    public WebDriverProvider(final HugeWebDriverConfig config) {
+    private final SimpleWebDriverConfig config;
+
+    public WebDriverProvider(final SimpleWebDriverConfig config) {
         this.config = config;
     }
 

@@ -1,7 +1,5 @@
 package com.alexlis.config;
 
-
-import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -37,5 +35,4 @@ public class HugeWebDriverConfig {
         //конвертируем
         return  System.getProperty("baseUrl");
     }
-
 }
